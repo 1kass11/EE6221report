@@ -1,15 +1,24 @@
-# EE6221 CA2 — VLA for End-to-End Autonomous Driving
+# EE6221 CA2 — Underwater Robotics Review
 
-研究资料包（文献元数据、链接与原创笔记），供 Codex 审核并整合最终报告。仓库不含论文全文。
+水下机器人前沿文献调研与比较评价。课程作业提交截止日期为 **2026 年 11 月 7 日**，具体时刻以 NTULearn 为准，最终提交 PDF。
 
-| 路径 | 内容 | 维护者 | 状态 |
-|---|---|---|---|
-| research/plan.md | 计划表：题目、研究问题、比较方案、维度、分工与进度 | Claude | 阶段一完成 |
-| research/scope.md | 选题理由与范围边界（建议，待 Codex 审核） | Claude | 阶段一完成 |
-| research/search-log.md | 检索记录与核实来源 | Claude | 阶段一完成 |
-| research/literature.csv | 文献表 V01–V17 | Claude | 阶段一完成 |
-| research/references.bib | BibTeX（键名与 CSV 编号一致） | Claude | 阶段一完成 |
+## 当前状态
+仓库框架与研究提示词已建立。文献检索尚未开始，具体子题和最佳方案尚未确定。空白研究记录不能视为研究成果。
 
-阶段二（深读、比较、缺口、交接）见 plan.md §6。
+## 阅读入口
+1. [作业要求与验收清单](docs/assignment-requirements.md)
+2. [发给 Claude 的完整检索提示词](prompts/claude-literature-search.md)
+3. [项目规则](AGENTS.md) 与 [Claude 协作规则](CLAUDE.md)
+4. [研究资料说明](research/README.md)
+5. [交接流程](handoff/README.md)
+6. [文件位置与状态](LOCATIONS.md)
 
-协作约定：Claude 在 `claude/literature-review` 分支工作，不直接改写 main，不强制推送。
+## 分工与流程
+- **Codex**：主要负责人，审核子题、来源与实验数据，建立比较框架，整合最终报告。
+- **Claude**：检索文献，记录元数据与证据，提出候选比较方案，通过 `claude/literature-review` 分支交接。
+- **学生**：确认个人学习收获与职业兴趣，完成课程平台提交。
+
+Claude 开始前先拉取仓库最新内容。研究成果在独立分支提交；Codex 审核后整合进主分支。每次文件变更都应同步 LOCATIONS.md。
+
+## 研究原则
+选择一类水下机器人或一项技术，明确场景与比较标准。至少核验两篇最近 12 个月内发表的相关文章。论文、产品规格与演示分开记录；缺少统一实验条件时不得简单排名。当前仓库不包含已核验的参考文献。
